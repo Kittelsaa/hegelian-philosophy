@@ -4,7 +4,7 @@
     "/": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/index.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/index.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -17,7 +17,7 @@
     "/posts": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -30,7 +30,7 @@
     "/posts/1-hello-there": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts/1-hello-there.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/1-hello-there.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -43,7 +43,7 @@
     "/posts/10-universal-particular-singular": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts/10-universal-particular-singular.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/10-universal-particular-singular.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -56,7 +56,7 @@
     "/posts/11-the-absolute-and-reconciliation": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts/11-the-absolute-and-reconciliation.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/11-the-absolute-and-reconciliation.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -69,7 +69,7 @@
     "/posts/2-why-hegel-is-so-hard-to-get-right": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts/2-why-hegel-is-so-hard-to-get-right.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/2-why-hegel-is-so-hard-to-get-right.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -82,7 +82,7 @@
     "/posts/3-two-myths-to-clear-out": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts/3-two-myths-to-clear-out.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/3-two-myths-to-clear-out.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -95,7 +95,7 @@
     "/posts/4-how-hegel-proves-that-contradiction-is-real": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts/4-how-hegel-proves-that-contradiction-is-real.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/4-how-hegel-proves-that-contradiction-is-real.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -108,7 +108,7 @@
     "/posts/5-what_contradiction_feels_like": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts/5-what_contradiction_feels_like.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/5-what_contradiction_feels_like.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -121,7 +121,7 @@
     "/posts/6-love-before-logic": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts/6-love-before-logic.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/6-love-before-logic.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -134,7 +134,7 @@
     "/posts/7-understanding-and-reason": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts/7-understanding-and-reason.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/7-understanding-and-reason.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -147,7 +147,7 @@
     "/posts/8-substance-is-subject": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts/8-substance-is-subject.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/8-substance-is-subject.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -160,7 +160,7 @@
     "/posts/9-freedom-as-self-determination": {
       "initialRevalidateSeconds": false,
       "srcRoute": "/posts/[slug]",
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts/9-freedom-as-self-determination.json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/9-freedom-as-self-determination.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -174,9 +174,9 @@
   "dynamicRoutes": {
     "/posts/[slug]": {
       "routeRegex": "^/posts/([^/]+?)(?:/)?$",
-      "dataRoute": "/_next/data/3cebEp955XO_L-mC7mrfT/posts/[slug].json",
+      "dataRoute": "/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/[slug].json",
       "fallback": false,
-      "dataRouteRegex": "^/_next/data/3cebEp955XO_L\\-mC7mrfT/posts/([^/]+?)\\.json$",
+      "dataRouteRegex": "^/_next/data/JhVuBcDFo5Sz3YJ3G0WlJ/posts/([^/]+?)\\.json$",
       "allowHeader": [
         "host",
         "x-matched-path",

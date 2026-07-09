@@ -3,8 +3,8 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { ParsedUrlQuery } from "querystring";
 import Link from "next/link";
-import { serialize } from "next-mdx-remote/serialize";
-import { MDXRemote } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote-client/serialize";
+import { MDXClient } from "next-mdx-remote-client/csr";
 import rehypePrism from "rehype-prism-plus";
 import { getAllMdx, getMdx } from "@/lib/mdx";
 import { MDXFrontMatter } from "@/lib/types";
@@ -26,11 +26,14 @@ interface PostProps {
 }
 
 const Post: NextPage<PostProps> = ({ frontMatter, mdx, previous, next }) => {
+  if (mdx && "error" in mdx) {
+    return <p>Error rendering content: {String(mdx.error)}</p>;
+  }
   return (
     <>
       <Page {...frontMatter}>
         <Prose>
-          <MDXRemote {...mdx} components={components} />
+          <MDXClient {...mdx} components={components} />
         </Prose>
         {previous || next ? (
           <nav
@@ -129,14 +132,17 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const post = sortedMdxFiles[postIndex];
   const { frontMatter, content } = post;
 
-  const mdxContent = await serialize(content, {
-    mdxOptions: {
-      remarkPlugins: [remarkGfm],
-      rehypePlugins: [rehypePrism],
+  const mdxContent = await serialize({
+    source: content,
+    options: {
+      mdxOptions: {
+        remarkPlugins: [remarkGfm],
+        rehypePlugins: [rehypePrism],
+      },
+      scope: frontMatter,
     },
-    scope: frontMatter,
   });
-
+  
   return {
     props: {
       frontMatter,
