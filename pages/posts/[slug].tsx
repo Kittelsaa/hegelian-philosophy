@@ -68,12 +68,12 @@ const Post: NextPage<PostProps> = ({ frontMatter, mdx, previous, next }) => {
                 href="/"
                 style={{ fontFamily: "Syne Mono, monospace" }}
                 className={cx(
-                  "inline-flex items-center gap-2 px-4 py-2 rounded border text-sm",
-                  "border-accent-blue text-accent-blue",
-                  "dark:border-accent-red dark:text-gray-300",
-                  "hover:bg-accent-blue hover:text-white",
-                  "dark:hover:bg-accent-red dark:hover:text-white",
-                  "transition-colors"
+                  "inline-flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-bold",
+                  "bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm",
+                  "border border-white/20 dark:border-gray-700/30",
+                  "text-accent-blue dark:text-accent-red",
+                  "hover:bg-accent-blue hover:text-white ",
+                  "dark:hover:bg-accent-red dark:hover:text-white"
                 )}
               >
                 View All Notes

@@ -491,6 +491,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx
 // components/ThemeSelect.tsx
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$module$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-themes/dist/index.module.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/index.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sun.js [client] (ecmascript) <export default as Sun>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/moon.js [client] (ecmascript) <export default as Moon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/lib/utils.ts [client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$m$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__cx$3e$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.m.js [client] (ecmascript) <export default as cx>");
 ;
@@ -498,6 +500,29 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
+const THEME_MAP = {
+    light: {
+        label: "Light",
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
+            size: 16
+        }, void 0, false, {
+            fileName: "[project]/components/ThemeSelect.tsx",
+            lineNumber: 11,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0))
+    },
+    dark: {
+        label: "Dark",
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
+            size: 16
+        }, void 0, false, {
+            fileName: "[project]/components/ThemeSelect.tsx",
+            lineNumber: 15,
+            columnNumber: 11
+        }, ("TURBOPACK compile-time value", void 0))
+    }
+};
 const ThemeSelect = ()=>{
     _s();
     const { theme, setTheme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$module$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useTheme"])();
@@ -512,37 +537,43 @@ const ThemeSelect = ()=>{
             className: "h-9 w-28"
         }, void 0, false, {
             fileName: "[project]/components/ThemeSelect.tsx",
-            lineNumber: 16,
+            lineNumber: 28,
             columnNumber: 12
         }, ("TURBOPACK compile-time value", void 0));
     }
     const options = [
         {
             value: "light",
-            label: "Light"
+            label: THEME_MAP.light.label
         },
         {
             value: "dark",
-            label: "Dark"
+            label: THEME_MAP.dark.label
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$m$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__cx$3e$__["cx"])("inline-flex rounded-md border overflow-hidden text-sm", "border-gray-300 dark:border-gray-700"),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$m$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__cx$3e$__["cx"])("flex bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm gap-4", "border border-white/20 dark:border-gray-700/30", "rounded-2xl p-1"),
         children: options.map((option)=>{
             const isActive = theme === option.value;
+            const isLight = option.value === "light";
             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: ()=>setTheme(option.value),
-                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$m$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__cx$3e$__["cx"])("px-3 py-1.5 transition-colors", isActive ? "bg-accent-blue text-white dark:bg-accent-red" : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$m$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__cx$3e$__["cx"])("bg-transparent text-gray-600 dark:text-gray-300", "hover:bg-gray-100 dark:hover:bg-gray-800")),
-                children: option.label
-            }, option.value, false, {
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$m$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__cx$3e$__["cx"])("flex-1 flex items-center justify-center gap-1", "py-2 px-4 rounded-xl", "transition-all duration-200 ease-in-out", isActive ? isLight ? "bg-accent-blue text-white font-semibold transform scale-105" : "bg-accent-red text-white font-semibold transform scale-105" : isLight ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$m$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__cx$3e$__["cx"])("text-gray-600 hover:text-accent-blue hover:bg-accent-blue/10", "dark:text-gray-300 dark:hover:text-accent-blue dark:hover:bg-accent-blue/20") : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$m$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__cx$3e$__["cx"])("text-gray-900 hover:text-accent-red hover:bg-accent-red/10", "dark:text-gray-300 dark:hover:text-accent-red dark:hover:bg-accent-red/20")),
+                "aria-label": option.label,
+                title: option.label,
+                children: [
+                    THEME_MAP[option.value].icon,
+                    option.label
+                ]
+            }, option.value, true, {
                 fileName: "[project]/components/ThemeSelect.tsx",
-                lineNumber: 34,
+                lineNumber: 49,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0));
         })
     }, void 0, false, {
         fileName: "[project]/components/ThemeSelect.tsx",
-        lineNumber: 25,
+        lineNumber: 37,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
