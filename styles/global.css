@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent-red: #aa203f;
+  --accent-blue: #21659a;
+  --accent-red-light: #e8546f;
+  --accent-blue-light: #5fa8d3;
+
+  --bg-light: #f7f2ee;
+  --text-light: #2b2626;
+  --bg-dark: #201a1c;
+  --text-dark: #f2e9e6;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+html.dark,
+html.dark body,
+html.dark #__next {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #d6deeb;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: rgba(33, 101, 154, 0.4);
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: rgba(33, 101, 154, 0.4);
+}
+
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+}
+
+pre[class*="language-"] {
+  padding: 1em;
+  overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  @apply text-gray-50 border bg-gray-900 border-gray-700;
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata {
+  color: rgb(99, 119, 119);
+  font-style: italic;
+}
+.token.punctuation {
+  color: var(--accent-red-light);
+}
+.namespace {
+  color: rgb(178, 204, 214);
+}
+.token.deleted {
+  color: rgba(170, 32, 63, 0.7);
+  font-style: italic;
+}
+.token.symbol,
+.token.property {
+  color: var(--accent-blue-light);
+}
+.token.tag,
+.token.operator,
+.token.keyword {
+  color: var(--accent-blue-light);
+}
+.token.boolean {
+  color: var(--accent-red-light);
+}
+.token.number {
+  color: var(--accent-red-light);
+}
+.token.constant,
+.token.function,
+.token.builtin,
+.token.char {
+  color: var(--accent-blue-light);
+}
+.token.selector,
+.token.doctype {
+  color: var(--accent-red-light);
+  font-style: italic;
+}
+.token.attr-name,
+.token.inserted {
+  color: var(--accent-blue-light);
+  font-style: italic;
+}
+.token.string,
+.token.url,
+.token.entity,
+.language-css .token.string,
+.style .token.string {
+  color: var(--accent-blue-light);
+}
+.token.class-name,
+.token.atrule,
+.token.attr-value {
+  color: var(--accent-red-light);
+}
+.token.regex,
+.token.important,
+.token.variable {
+  color: var(--text-light);
+}
+.token.important,
+.token.bold {
+  font-weight: bold;
+  color: var(--text-light);
+}
+.token.italic {
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  color: var(--text-light);
+}
+h2 {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+}
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6,
+html.dark .title {
+  color: var(--text-dark);
+}
+html.dark .token.regex,
+html.dark .token.important,
+html.dark .token.variable {
+  color: var(--text-dark);
+}
+html.dark .token.important,
+html.dark .token.bold {
+  font-weight: bold;
+  color: var(--text-dark);
+}
