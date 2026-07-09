@@ -1,4 +1,4 @@
-# 🦉 A Guide to Hegel's Philosophy
+# 🦉 A Beginner's Guide to Understanding Hegel's Philosophy
 
 ## Technologies Used
 This website was developed with:
