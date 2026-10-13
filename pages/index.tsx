@@ -43,7 +43,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const mdxFiles = getAllMdx().map((post) => post["frontMatter"]);
   return {
     props: {
-      posts: mdxFiles.slice(0, 13),
+      posts: mdxFiles,
     },
   };
 };

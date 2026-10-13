@@ -38,8 +38,15 @@ const getMdx = (fileName)=>{
     };
 };
 const getAllMdx = ()=>{
-    const items = __TURBOPACK__imported__module__$5b$externals$5d2f$fs__$5b$external$5d$__$28$fs$2c$__cjs$29$__["default"].readdirSync(postsPath).map((item)=>getMdx(item));
-    return items.sort((a, b)=>new Date(b.frontMatter.date).getTime() - new Date(a.frontMatter.date).getTime());
+    const items = __TURBOPACK__imported__module__$5b$externals$5d2f$fs__$5b$external$5d$__$28$fs$2c$__cjs$29$__["default"].readdirSync(postsPath).filter((item)=>item.endsWith(".mdx")).map((item)=>getMdx(item));
+    // Sort by id (the guide's reading order). Dates are shared between many
+    // posts, so sorting by date alone gave an unstable order.
+    return items.sort((a, b)=>{
+        const idA = a.frontMatter.id || 0;
+        const idB = b.frontMatter.id || 0;
+        if (idA !== idB) return idA - idB;
+        return new Date(b.frontMatter.date).getTime() - new Date(a.frontMatter.date).getTime();
+    });
 };
 }),
 "[project]/lib/formatDate.ts [ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -371,7 +378,7 @@ const getStaticProps = async ()=>{
     const mdxFiles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$mdx$2e$ts__$5b$ssr$5d$__$28$ecmascript$29$__["getAllMdx"])().map((post)=>post["frontMatter"]);
     return {
         props: {
-            posts: mdxFiles.slice(0, 13)
+            posts: mdxFiles
         }
     };
 };
